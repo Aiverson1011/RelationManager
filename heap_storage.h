@@ -5,8 +5,8 @@
  * HeapFile: DbFile
  * HeapTable: DbRelation
  *
- * @author Kevin Lundeen
- * @student Wonseok Seo, Amanda Iverson
+ * @Professor: Kevin Lundeen
+ * @Students: Wonseok Seo, Amanda Iverson
  * @see "Seattle University, CPSC5300, Summer 2018"
  * Note: Slight modification for style and additional implementation for sprint3
  */
