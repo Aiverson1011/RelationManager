@@ -1,8 +1,8 @@
 /**
  * @file btree.cpp - implementation of BTreeIndex class inheritance of DbIndex
  *                   class
- * @author Kevin Lundeen
- * @student Wonseok Seo, Amanda Iverson
+ * @Professor: Kevin Lundeen
+ * @Students: Wonseok Seo, Amanda Iverson
  * @see "Seattle University, CPSC5300, Summer 2018"
  */
 #include "btree.h"
