@@ -1,0 +1,45 @@
+This example program shows how to set up a Berkeley DB environment and 
+create a database file within it.
+See
+	example.cpp
+and the corresponding Makefile for how it is built.
+
+We'll be using RecNo file types and storing one of our database blocks 
+per BerkeleyDb record. Documentation is here: 
+	http://docs.oracle.com/cd/E17076_05/html/index.html
+
+To run a program linked against our private Berkeley DB library, you have 
+to export LD_LIBRARY_PATH. So do this (you can put it in your ~/.bash_profile, 
+without the leading $ prompt):
+
+$ export LD_LIBRARY_PATH=/usr/local/db6/lib:$LD_LIBRARY_PATH
+
+You can build the example using the Makefile:
+
+$ make
+
+Then you can run the program that's been linked against the Berkeley DB 
+software library, e.g., 
+
+$ ./example
+
+You can also play around with Python and Berkeley DB files. You'll need
+PYTHONPATH set properly, first.
+
+$ export PYTHONPATH=/usr/local/db6/lib/site-packages:$PYTHONPATH
+
+(You can put that in your ~/.bash_profile.)
+
+$ python3.6
+>>> from bsddb3 import db
+>>> import os
+>>>
+>>> file = os.path.join(os.environ.get('HOME'), 'cpsc5300/data/example.db')
+>>> d = db.DB()
+>>> d.open(file)
+>>>
+>>> block = d.get(1) # read the data we wrote in out c++ example program to block #1
+>>> block[0:10]
+b'hello!\x00\x00\x00\x00'
+>>>
+>>> quit()
