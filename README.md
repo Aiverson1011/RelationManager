@@ -11,6 +11,11 @@ What is implemented within this repo does not
 do everything, but is able to handle some
 rather complicated queries. 
 
+This project was constructed during a 6 week summer CPSC5300 Physical Databases courses at Seattle University. 
+
+Given the size of the application, and the limited amount of time within the course, about half of the code, each sprint, was provided
+by Professor Kevin Lundeen to ensure a timely delivery and working product.
+
 
 ## Dependencies
 
@@ -357,7 +362,7 @@ Within the insert, we added the capability to insert values into a table directl
 
 The select required an evaluation plan to be created and executed. For the select, we had to also create the function get_where_conjunction as a local recursive function that pulls apart the parse tree. We then wrapped that into a project. Together this allows us to get the column names requested through the evalplan and output it back to the user. 
 
-The delete is similar to the select, except we don’t have to wrap in an eval plan, We still have to get all the information that the select was asking for, except in addition we just remove the indices as we have in the past for previous remove functions. 
+The delete is similar to the select, except we donÂ’t have to wrap in an eval plan, We still have to get all the information that the select was asking for, except in addition we just remove the indices as we have in the past for previous remove functions. 
 
 
 Sample output: 
