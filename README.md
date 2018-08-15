@@ -5,13 +5,13 @@
 This project consists of a bare bones
 implementation of a relation manager. 
 
-A relatiom manager is part of a full DBMS and is 
+A relation manager is part of a full DBMS and is 
 usually the core of the system.
 What is implemented within this repo does not 
 do everything, but is able to handle some
 rather complicated queries. 
 
-This project was constructed during a 6 week summer CPSC5300 Physical Databases courses at Seattle University. 
+This project was constructed during a 6 week summer CPSC5300 Physical Databases course at Seattle University during the summer of 2018. 
 
 Given the size of the application, and the limited amount of time within the course, about half of the code, each sprint, was provided
 by Professor Kevin Lundeen to ensure a timely delivery and working product.
@@ -43,7 +43,7 @@ The product within this repo is the final result of a minimal working relation m
 ### Sprint 1
 
 #### Milestone 1: Skeleton
-Sprint 1 was primarily a skeleton of our product. This sprint consisted of really just allowing us
+Sprint 1 was primarily a skeleton for our product. This sprint consisted of really just allowing us
 to get comfortable with the environment and language. 
 
 The final deliverable for this was to ensure that we were able to do command line inputs, and recieve outputs as a result. 
