@@ -1,7 +1,7 @@
 /**
  * @file SQLExec.cpp - implementation of SQLExec class
- * @author Kevin Lundeen
- * @student Wonseok Seo, Amanda Iverson
+ * @Professor: Kevin Lundeen
+ * @Students: Wonseok Seo, Amanda Iverson
  * @see "Seattle University, CPSC5300, Summer 2018"
  */
 #include <algorithm>
